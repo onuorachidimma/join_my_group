@@ -5,52 +5,72 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
- 
-   
-
-    
 }
 
 .container{
-    /* margin: auto;
-    width: 100%; */
-    /* position: relative; */
-    background: url("https://images.unsplash.com/photo-1568738351265-c7065f5d4293?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHx2ZXJ5JTIwZmFpbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background: url("../images/background-img.avif");
     background-size: cover;
     background-position: 50% 50%;
-    /* background: rgba(76, 175, 80, 0.1); */
     background-repeat: no-repeat;
     margin-top: 100px;
-
 }
 
 .content-container{
-    /* position: absolute; */
     padding: 50px;
     margin: auto;
     width: 50%;
-    
 }
 
 .p-bold{
-    line-height: 15px;
+    line-height: 1px;
     font-size: 15px;
 }
 
 .p-light{
-    padding-bottom: 17px;
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 
 h1{
-    
     font-size: 3.5rem;
     margin-bottom: 0px;
-  
-    
+    line-height: 1; 
 }
 
 .color{
     color: #5f5d68;
 }
 
+.in-block{
+    display: inline-block;
+}
 
+i{
+    color: #fedb01;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+/* I was not able to figure out why this didn't work */
+/* .p-bold p::before{
+    content: "\e885";
+    padding-right: 10px;
+    color: yellow;
+} */
+
+/* FOR SMALLER SCREEN */
+
+@media screen and (max-width: 600px) {
+    .content-container{
+        padding: 20px;
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 0px;
+        line-height: 1;
+    }   
+}
