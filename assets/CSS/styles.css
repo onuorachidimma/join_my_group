@@ -33,7 +33,7 @@ body{
 
 h1{
     font-size: 3.5rem;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     line-height: 1; 
 }
 
@@ -72,5 +72,5 @@ i{
         font-size: 2rem;
         margin-bottom: 0px;
         line-height: 1;
-    }   
+    } 
 }
